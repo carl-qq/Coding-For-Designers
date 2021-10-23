@@ -35,7 +35,6 @@ class Output {
 class Input {
     constructor() {
         this.item = document.querySelector('#textbox');
-        this.item.addEventListener('keypress', function(e) { if (e.key === "Enter") input.exec(); });
         this.text;
         this.number = 0;
         this.addInputToText = true;
@@ -73,7 +72,9 @@ class Input {
 }
 
 let input = new Input();
+input.item.addEventListener('keypress', function(e) { if (e.key === "Enter") input.exec(); });
+
 let messages = document.querySelector('#messages');
 let output = new Output();
 
-m
+main();
