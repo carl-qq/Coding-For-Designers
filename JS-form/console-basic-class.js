@@ -76,4 +76,4 @@ let input = new Input();
 let messages = document.querySelector('#messages');
 let output = new Output();
 
-main();
+m
